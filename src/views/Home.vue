@@ -29,7 +29,7 @@
                             break;
                     }
                 } else if(logout) {
-                    this.showMsg('操作成功');
+                    vm.showMsg('操作成功');
                 }
             })
         },

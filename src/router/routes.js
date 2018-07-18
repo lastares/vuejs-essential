@@ -18,10 +18,18 @@ export default [
         name: 'Login',
         component: () => import('@/views/auth/Login')
     },
-    // EditUsers
+
+    // 编辑资料路由
     {
         path: '/users/1/edit',
-        name: 'EditUsers',
-        component: () => import('@/views/users/Edit.vue')
+        component: () => import('@/views/users/Edit.vue'),
+        children: [
+            {
+                path: '',
+                name: 'EditProfile',
+                component: () => import('@/views/users/Profile.vue'),
+                meta: { auth: true }
+            }
+        ]
     },
 ]
