@@ -1,4 +1,12 @@
 import Vue from 'vue';
-import validate from './validator';
+import validator from './validator';
+import dropdown from './dropdown'
 
-Vue.directive('validator', validate);
+const directives = {
+    validator,
+    dropdown,
+};
+
+for(const [key, value] of Object.entries(directives)) {
+    Vue.directive(key, value);
+}

@@ -6,8 +6,11 @@ import router from './router'
 import './directives'
 import './components'
 import store from './store'
+import VueSweetalert2 from './plugins/vue-sweetalert2'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+// 使用插件
+Vue.use(VueSweetalert2);
 
 /* eslint-disable no-new */
 new Vue({
