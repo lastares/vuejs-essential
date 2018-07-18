@@ -16,13 +16,17 @@
         },
         beforeRouteEnter(to, from, next) {
             const fromName = from.name
-
+            // 获取 logout 参数
+            const logout = to.params.logout;
             next(vm => {
                 if (vm.$store.state.auth) {
                     switch (fromName) {
                         case 'Register':
                             vm.showMsg('注册成功');
-                            break
+                            break;
+                        case 'Login':
+                            vm.showMsg('登录成功');
+                            break;
                     }
                 } else if(logout) {
                     this.showMsg('操作成功');
