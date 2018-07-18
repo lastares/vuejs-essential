@@ -92,7 +92,8 @@
                     };
                     // console.log(user);
 
-                    const localUser = ls.getItem('user');
+                    // const localUser = ls.getItem('user');
+                    const localUser = this.$store.state.user
 
                     if(localUser) {
                         if(localUser.name === user.name) {
@@ -108,13 +109,14 @@
             },
 
             login(user) {
-                ls.setItem('user', user);
+                // ls.setItem('user', user);
+                this.$store.dispatch('login', user);
                 this.showMsg('注册成功', 'success');
             },
 
             showMsg(msg, type = 'warning') {
                 this.msg = msg;
-                this.type = type;
+                this.msgType = type;
                 this.msgShow = false;
                 this.$nextTick(() => {
                     this.msgShow = true;
