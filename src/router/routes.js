@@ -70,7 +70,6 @@ export default [
     // 个人专栏
     {
         path: '/:user',
-        // name: 'Column',
         component: () => import('@/views/articles/Column'),
         children: [
             {
