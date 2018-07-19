@@ -19,7 +19,12 @@ export default [
         name: 'Login',
         component: () => import('@/views/auth/Login')
     },
-
+    // Search
+    {
+        path: '/search',
+        name: 'Search',
+        component: () => import('@/views/Search')
+    },
     // 编辑资料路由
     {
         path: '/users/1/edit',
