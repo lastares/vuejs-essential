@@ -20,7 +20,7 @@ Vue.use(Message);
 
 const AddMockData = (() => {
     // 是否加入测试数据
-    const isAddMockData = false
+    const isAddMockData = true
     // 用户数据
     let userArticles = ls.getItem('articles')
 
