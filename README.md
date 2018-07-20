@@ -21,12 +21,12 @@ npm run build --report
 ```
 ### 项目首页
 
-!['vue-index'](./vue-index.png)
+![vue-index](/vue-index.png)
 
 ### 个人专栏
 
-!['vue-person'](./vue-personal.png)
+![vue-person](/vue-personal.png)
 
 ### 常见文章
 
-!['vue-create-article'](./vue-create-article.png)
+![vue-create-article](/vue-create-article.png)
