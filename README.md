@@ -2,7 +2,9 @@
 
 > A Vue.js project
 
-## Build Setup
+### 项目预览地址：https://songyaofeng.github.io/vuejs-essential/dist
+
+### Build Setup
 
 ``` bash
 # install dependencies
@@ -17,5 +19,14 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+### 项目首页
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![vue-index](./vue-index.png)
+
+### 个人专栏
+
+![vue-person](./vue-personal.png)
+
+### 常见文章
+
+![vue-create-article](./vue-create-article.png)
